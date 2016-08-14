@@ -23,7 +23,7 @@
 (require 'generic-x)
 
 (define-generic-mode 'go-mode                   ;; name of the mode
-  nil
+  '("//")
   '("break" "default" "func" 
     "interface" "select" "case" 
     "defer" "go" "map" "struct" 
@@ -33,7 +33,6 @@
     "for" "import" "return" "var")              ;; some keywords
   
   '(
-    ("\\(//.*\\)" . 'font-lock-comment-face)
     ("nil" . 'font-lock-constant-face)
     ("\\<make\\>\\|\\<close\\>\\|\\<len\\>\\|\\<cap\\>\\|\\<new\\>\\|\\<append\\>\\|\\<copy\\>\\|\\<delete\\>\\|\\<complex\\>\\|\\<real\\>\\|\\<imag\\>\\|\\<panic\\>\\|\\<recover\\>" . 'font-lock-builtin-face)
     ("\\<int\\>\\|\\<int8\\>\\|\\<int16\\>\\|\\<int32\\>\\|\\<int64\\>\\|\\<uint\\>\\|\\<uint8\\>\\|\\<uint16\\>\\|\\<uint32\\>\\|\\<uint64\\>\\|\\<float32\\>\\|\\<float64\\>\\|\\<complex64\\>\\|\\<complex128\\>\\|\\<byte\\>\\|\\<rune\\>\\|\\<bool\\>\\|\\<uintptr\\>\\|\\<string\\>" . 'font-lock-type-face))
