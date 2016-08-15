@@ -35,7 +35,7 @@
   '(
     ("nil" . 'font-lock-constant-face)
     ("\\<make\\>\\|\\<close\\>\\|\\<len\\>\\|\\<cap\\>\\|\\<new\\>\\|\\<append\\>\\|\\<copy\\>\\|\\<delete\\>\\|\\<complex\\>\\|\\<real\\>\\|\\<imag\\>\\|\\<panic\\>\\|\\<recover\\>" . 'font-lock-builtin-face)
-    ("\\<int\\>\\|\\<int8\\>\\|\\<int16\\>\\|\\<int32\\>\\|\\<int64\\>\\|\\<uint\\>\\|\\<uint8\\>\\|\\<uint16\\>\\|\\<uint32\\>\\|\\<uint64\\>\\|\\<float32\\>\\|\\<float64\\>\\|\\<complex64\\>\\|\\<complex128\\>\\|\\<byte\\>\\|\\<rune\\>\\|\\<bool\\>\\|\\<uintptr\\>\\|\\<string\\>" . 'font-lock-type-face))
+    ("\\<int\\>\\|\\<int8\\>\\|\\<int16\\>\\|\\<int32\\>\\|\\<int64\\>\\|\\<uint\\>\\|\\<uint8\\>\\|\\<uint16\\>\\|\\<uint32\\>\\|\\<uint64\\>\\|\\<float32\\>\\|\\<float64\\>\\|\\<complex64\\>\\|\\<complex128\\>\\|\\<byte\\>\\|\\<rune\\>\\|\\<bool\\>\\|\\<uintptr\\>\\|\\<string\\>\\|\\<error\\>" . 'font-lock-type-face))
   '("\\.go$")                                   ;; files that trigger this mode
   nil                                           ;; any other functions to call
   "Go languange highlight mode"                 ;; doc string
