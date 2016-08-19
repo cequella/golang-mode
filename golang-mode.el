@@ -52,8 +52,9 @@
 	     ; "break" "default" "func" "interface" "select" "case "defer" "go" "map" "struct"
 	     ; "chan" "else" "goto" "package" "switch" "const" "falltrought" "if" "range" "type"
 	     ; "continue" "for" "import" "return" "var"
-	        '("\\<break\\>\\|\\<default\\>\\|\\<func\\>\\|\\<interface\\>\\|\\<select\\>\\|\\<case\\>\\|\\<defer\\>\\|\\<go\\>\\|\\<map\\>\\|\\<struct\\>\\|\\<chan\\>\\|\\<else\\>\\|\\<goto\\>\\|\\<package\\>\\|\\<switch\\>\\|\\<const\\>\\|\\<falltrought\\>\\|\\<if\\>\\|\\<range\\>\\|\\<type\\>\\|\\<continue\\>\\|\\<for\\>\\|\\<import\\>\\|\\<return\\>\\|\\<var\\>" . font-lock-keyword-face)
-		   '("\\<true\\>\\|\\<false\\>\\|\\<nil\\>" . font-lock-constant-face)))
+	     '("\\<break\\>\\|\\<default\\>\\|\\<func\\>\\|\\<interface\\>\\|\\<select\\>\\|\\<case\\>\\|\\<defer\\>\\|\\<go\\>\\|\\<map\\>\\|\\<struct\\>\\|\\<chan\\>\\|\\<else\\>\\|\\<goto\\>\\|\\<package\\>\\|\\<switch\\>\\|\\<const\\>\\|\\<falltrought\\>\\|\\<if\\>\\|\\<range\\>\\|\\<type\\>\\|\\<continue\\>\\|\\<for\\>\\|\\<import\\>\\|\\<return\\>\\|\\<var\\>" . font-lock-keyword-face)
+	     '("\\<true\\>\\|\\<false\\>\\|\\<nil\\>\\|\\<iota\\>" . font-lock-constant-face)
+	     '("\\<rune\\>\\|\\<string\\>\\|\\<byte\\>\\|\\<bool\\>\\|\\<error\\>\\|\\<int\\>\\|\\<int8\\>\\|\\<int16\\>\\|\\<int32\\>\\|\\<int64\\>\\|\\<uint\\>\\|\\<uint8\\>\\|\\<uint16\\>\\|\\<uint32\\>\\|\\<uint64\\>\\|\\<uintptr\\>\\|\\<float32\\>\\|\\<float64\\>\\|\\<complex64\\>\\|\\<complex128\\>" . font-lock-type-face)))
   "Additional Keywords to highlight in GO mode.")
 
 (defvar go-font-lock-keywords go-font-lock-keywords-2
